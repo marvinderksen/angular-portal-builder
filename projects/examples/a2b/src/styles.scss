@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+@import '~@angular/material/theming';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+
+  font-family: 'Roboto Slab';
+
+  background: rgb(236, 235, 230);
+}
+
+app-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto Slab',
+);
+@include angular-material-typography($custom-typography);

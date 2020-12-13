@@ -1,0 +1,12 @@
+<header>
+  <h2><ng-content></ng-content></h2>
+</header>
+
+<mat-form-field>
+  <mat-label>pick a city</mat-label>
+  <mat-select (selectionChange)="publishChange($event.value)">
+    <mat-option *ngFor="let city of cities" [value]="city">
+      {{ city }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

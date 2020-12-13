@@ -1,0 +1,13 @@
+<mat-card *ngIf="cab">
+  <mat-card-title>Cab (not Uber)</mat-card-title>
+
+  <mat-card-content>
+    <span>driver: <strong>someone who will rip you off</strong></span>
+    <span class="price">
+      <mat-icon>attach_money</mat-icon> {{ cab?.price }}
+    </span>
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-stroked-button color="primary">complain in advance</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,14 @@
+h1 {
+  margin: -3em 0 1em;
+
+  font-size: 2em;
+  font-weight: 200;
+}
+
+main {
+  display: flex;
+
+  app-trip-point + app-trip-point {
+    margin-left: 2em;
+  }
+}

@@ -1,0 +1,14 @@
+mat-card-content {
+  strong {
+    font-weight: 500;
+  }
+
+  .price {
+    margin: 1em 0;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5em;
+  }
+}

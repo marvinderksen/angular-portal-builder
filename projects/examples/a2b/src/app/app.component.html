@@ -1,0 +1,10 @@
+<h1>how to get</h1>
+<main>
+  <app-trip-point (selected)="selectFrom($event)">from</app-trip-point>
+
+  <ng-container *ngIf="trip | async as t">
+    <app-directions *ngIf="t" [directions]="t?.directions"></app-directions>
+  </ng-container>
+
+  <app-trip-point (selected)="selectTo($event)">to</app-trip-point>
+</main>

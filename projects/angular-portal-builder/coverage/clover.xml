@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1607820451936" clover="3.2.0">
+  <project timestamp="1607820451936" name="All files">
+    <metrics statements="38" coveredstatements="38" conditionals="12" coveredconditionals="12" methods="12" coveredmethods="12" elements="62" coveredelements="62" complexity="0" loc="38" ncloc="38" packages="1" files="4" classes="4"/>
+    <file name="component-registry.ts" path="C:\_git\angular-portal-builder\projects\angular-portal-builder\src\lib\component-registry.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="12" count="6" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="7" type="stmt"/>
+      <line num="19" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="25" count="5" type="stmt"/>
+    </file>
+    <file name="invalid-operation.ts" path="C:\_git\angular-portal-builder\projects\angular-portal-builder\src\lib\invalid-operation.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+    </file>
+    <file name="no-suitable-registration.ts" path="C:\_git\angular-portal-builder\projects\angular-portal-builder\src\lib\no-suitable-registration.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+    </file>
+    <file name="portal-builder.ts" path="C:\_git\angular-portal-builder\projects\angular-portal-builder\src\lib\portal-builder.ts">
+      <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="17" count="34" type="stmt"/>
+      <line num="22" count="34" type="stmt"/>
+      <line num="23" count="34" type="stmt"/>
+      <line num="24" count="34" type="stmt"/>
+      <line num="39" count="7" type="stmt"/>
+      <line num="45" count="7" type="stmt"/>
+      <line num="59" count="6" type="stmt"/>
+      <line num="64" count="7" type="stmt"/>
+      <line num="75" count="3" type="stmt"/>
+      <line num="96" count="5" type="stmt"/>
+      <line num="104" count="5" type="stmt"/>
+      <line num="113" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="114" count="1" type="stmt"/>
+      <line num="118" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="119" count="1" type="stmt"/>
+      <line num="124" count="4" type="stmt"/>
+      <line num="126" count="3" type="cond" truecount="2" falsecount="0"/>
+      <line num="127" count="1" type="stmt"/>
+      <line num="130" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

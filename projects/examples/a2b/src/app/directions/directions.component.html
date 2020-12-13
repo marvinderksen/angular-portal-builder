@@ -1,0 +1,7 @@
+<mat-icon>chevron_right</mat-icon>
+
+<ng-container *ngFor="let node of directions; let isLast = last">
+  <app-node-host [node]="node"></app-node-host>
+
+  <mat-icon>chevron_right</mat-icon>
+</ng-container>

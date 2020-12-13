@@ -1,0 +1,10 @@
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    strong {
+      font-weight: 500;
+    }
+  }
+}

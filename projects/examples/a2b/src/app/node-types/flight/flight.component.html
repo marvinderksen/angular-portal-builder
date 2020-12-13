@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-title>Flight</mat-card-title>
+
+  <mat-card-content>
+    <div class="airport departure">
+      <header>departure</header>
+      <span class="airport">
+        <strong>{{ flight.departure.airport }}</strong>
+      </span>
+      <span>
+        gate: <strong>{{ flight.departure.gate }}</strong>
+      </span>
+      <span>
+        date: <strong>{{ flight.departure.date }}</strong>
+      </span>
+    </div>
+    <div class="airport arrival">
+      <header>arrival</header>
+      <span class="airport">
+        <strong>{{ flight.arrival.airport }}</strong>
+      </span>
+      <span>
+        gate:
+        <strong *ngIf="flight.arrival.gate">{{ flight.arrival.gate }}</strong>
+        <em *ngIf="!flight.arrival.gate"> won't tell you </em>
+      </span>
+      <span>
+        date: <strong>{{ flight.arrival.date }}</strong>
+      </span>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <a [href]="flight.checkinUrl" mat-stroked-button color="primary"
+      >check in now (good luck with that)</a
+    >
+  </mat-card-actions>
+</mat-card>

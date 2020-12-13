@@ -1,0 +1,14 @@
+<mat-card *ngIf="train">
+  <mat-card-title>Tain</mat-card-title>
+
+  <mat-card-content>
+    <span>
+      operator: <strong>{{ train?.operator }}</strong>
+    </span>
+    <span>will guarantee your seat reservation: <strong>no</strong></span>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-stroked-button color="primary">calculate delay</button>
+  </mat-card-actions>
+</mat-card>

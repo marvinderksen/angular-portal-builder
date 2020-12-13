@@ -1,27 +1,28 @@
 # AngularPortalBuilder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+Use @angular/cdk's PortalOutlet instead of if/else or switches in your templates :)
 
-## Development server
+Why? Because of this:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```html
+<ng-container [ngSwitch]="node.type">
+  <app-cab *ngSwitchCase="'cab'"></app-cab>
+  <app-flight *ngSwitchCase="'flight'"></app-flight>
+  <app-train *ngSwitchCase="'train'"></app-train>
+  <app-walk *ngSwitchCase="'walk'"></app-walk>
+</ng-container>
+```
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+$npm install angular-portal-builder
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Please have a look at [the package's readme](https://github.com/marvinderksen/angular-portal-builder/projects/angular-portal-builder#readme).
 
-## Running unit tests
+## Example
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+You will find a small example application at [examples/a2b](https://github.com/marvinderksen/angular-portal-builder/projects/examples/a2b#readme).
