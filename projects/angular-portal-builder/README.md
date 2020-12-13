@@ -14,7 +14,7 @@ Why? Because of this:
 ## Installation
 
 ```bash
-$npm install angular-portal-builder
+npm install angular-portal-builder
 ```
 
 ## Usage

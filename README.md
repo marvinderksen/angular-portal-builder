@@ -1,6 +1,6 @@
 # AngularPortalBuilder
 
-Use @angular/cdk's PortalOutlet instead of if/else or switches in your templates :)
+Use [@angular/cdk](https://www.npmjs.com/package/@angular/cdk)'s PortalOutlet instead of if/else or switches in your templates :)
 
 Why? Because of this:
 
@@ -16,7 +16,7 @@ Why? Because of this:
 ## Installation
 
 ```bash
-$npm install angular-portal-builder
+npm install angular-portal-builder
 ```
 
 ## Usage
