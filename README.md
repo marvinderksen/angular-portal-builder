@@ -26,3 +26,7 @@ Please have a look at [the lib's readme](https://github.com/marvinderksen/angula
 ## Example
 
 You will find a small example application at [examples/a2b](https://github.com/marvinderksen/angular-portal-builder/tree/main/projects/examples/a2b).
+
+## Massive thanks
+
+to the [Angular Components](https://github.com/angular/components) team!
