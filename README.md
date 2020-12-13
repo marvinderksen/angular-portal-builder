@@ -21,8 +21,8 @@ $npm install angular-portal-builder
 
 ## Usage
 
-Please have a look at [the package's readme](https://github.com/marvinderksen/angular-portal-builder/projects/angular-portal-builder#readme).
+Please have a look at [the lib's readme](https://github.com/marvinderksen/angular-portal-builder/tree/main/projects/angular-portal-builder).
 
 ## Example
 
-You will find a small example application at [examples/a2b](https://github.com/marvinderksen/angular-portal-builder/projects/examples/a2b#readme).
+You will find a small example application at [examples/a2b](https://github.com/marvinderksen/angular-portal-builder/tree/main/projects/examples/a2b).
