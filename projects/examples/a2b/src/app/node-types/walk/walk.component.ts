@@ -1,6 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-import { TRIP_NODE } from '../../types';
+import { TripNode } from '../../types';
 import { Walk } from './walk';
 
 @Component({
@@ -9,7 +9,12 @@ import { Walk } from './walk';
   styleUrls: ['./walk.component.scss'],
 })
 export class WalkComponent implements OnInit {
-  constructor(@Inject(TRIP_NODE) readonly walk: Walk) {}
+  @Input()
+  node: TripNode | undefined = undefined;
 
-  ngOnInit() {}
+  walk: Walk | undefined;
+
+  ngOnInit() {
+    this.walk = this.node as Walk;
+  }
 }

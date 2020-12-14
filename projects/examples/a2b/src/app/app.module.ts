@@ -14,7 +14,6 @@ import { FlightComponent } from './node-types/flight/flight.component';
 import { TrainComponent } from './node-types/train/train.component';
 import { WalkComponent } from './node-types/walk/walk.component';
 import { TripPointComponent } from './trip-point/trip-point.component';
-import { NodeHostComponent } from './directions/node-host/node-host.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { NodeHostComponent } from './directions/node-host/node-host.component';
     FlightComponent,
     CabComponent,
     TrainComponent,
-    NodeHostComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,12 @@
 <mat-icon>chevron_right</mat-icon>
 
 <ng-container *ngFor="let node of directions; let isLast = last">
-  <app-node-host [node]="node"></app-node-host>
+  <ng-container [ngSwitch]="node.type">
+    <app-cab *ngSwitchCase="'cab'" [node]="node"></app-cab>
+    <app-flight *ngSwitchCase="'flight'" [node]="node"></app-flight>
+    <app-train *ngSwitchCase="'train'" [node]="node"></app-train>
+    <app-walk *ngSwitchCase="'walk'" [node]="node"></app-walk>
+  </ng-container>
 
   <mat-icon>chevron_right</mat-icon>
 </ng-container>

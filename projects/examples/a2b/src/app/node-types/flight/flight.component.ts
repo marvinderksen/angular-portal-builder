@@ -1,6 +1,6 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-import { TRIP_NODE } from '../../types';
+import { TripNode } from '../../types';
 import { Flight } from './flight';
 
 @Component({
@@ -8,6 +8,13 @@ import { Flight } from './flight';
   templateUrl: './flight.component.html',
   styleUrls: ['./flight.component.scss'],
 })
-export class FlightComponent {
-  constructor(@Inject(TRIP_NODE) readonly flight: Flight) {}
+export class FlightComponent implements OnInit {
+  @Input()
+  node: TripNode | undefined = undefined;
+
+  flight: Flight | undefined;
+
+  ngOnInit() {
+    this.flight = this.node as Flight;
+  }
 }
