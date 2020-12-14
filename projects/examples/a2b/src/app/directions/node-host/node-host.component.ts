@@ -1,12 +1,11 @@
 import { CdkPortalOutlet } from '@angular/cdk/portal';
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { ComponentRegistration, PortalBuilder } from 'angular-portal-builder';
 
 import { CabComponent } from '../../node-types/cab/cab.component';
 import { FlightComponent } from '../../node-types/flight/flight.component';
 import { NodeComponent } from '../../node-types/node-component';
-import { TrainComponent } from '../../node-types/train/train.component';
-import { WalkComponent } from '../../node-types/walk/walk.component';
+import { NODE_COMPONENT_REGISTRATION } from '../../node-types/node-component-registration';
 import { TRIP_NODE, TripNode } from '../../types';
 
 const knownComponents: ComponentRegistration[] = [
@@ -17,14 +16,6 @@ const knownComponents: ComponentRegistration[] = [
   {
     componentType: FlightComponent,
     matches: (candidate: string) => candidate === 'flight',
-  },
-  {
-    componentType: TrainComponent,
-    matches: (candidate: string) => candidate === 'train',
-  },
-  {
-    componentType: WalkComponent,
-    matches: (candidate: string) => candidate === 'walk',
   },
 ];
 
@@ -41,6 +32,21 @@ export class NodeHostComponent implements OnInit {
   portalOutlet: CdkPortalOutlet | undefined;
 
   private readonly portalBuilder = new PortalBuilder();
+  private readonly registrations: ComponentRegistration[];
+
+  constructor(
+    @Inject(NODE_COMPONENT_REGISTRATION)
+    injectedComponentRegistrations: any
+  ) {
+    // 🡅 If you want to have the full advantages of decoupling features
+    // you do not collect the different registrations in one array at build-time,
+    // but use dependency-injection with multi.
+    // See the `train` and `walk` modules in `node-types/`.
+    this.registrations = [
+      ...knownComponents,
+      ...injectedComponentRegistrations,
+    ];
+  }
 
   ngOnInit(): void {
     if (!this.node) {
@@ -51,7 +57,7 @@ export class NodeHostComponent implements OnInit {
     }
 
     const componentRef = this.portalBuilder
-      .useRegistry(knownComponents)
+      .useRegistry(this.registrations)
       .pick(this.node.type)
       .useInjector([{ provide: TRIP_NODE, useValue: this.node }])
       .attachTo(this.portalOutlet);

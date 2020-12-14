@@ -9,22 +9,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DirectionsComponent } from './directions/directions.component';
+import { NodeHostComponent } from './directions/node-host/node-host.component';
 import { CabComponent } from './node-types/cab/cab.component';
 import { FlightComponent } from './node-types/flight/flight.component';
-import { TrainComponent } from './node-types/train/train.component';
-import { WalkComponent } from './node-types/walk/walk.component';
+import { TrainModule } from './node-types/train/train.module';
+import { WalkModule } from './node-types/walk/walk.module';
 import { TripPointComponent } from './trip-point/trip-point.component';
-import { NodeHostComponent } from './directions/node-host/node-host.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TripPointComponent,
     DirectionsComponent,
-    WalkComponent,
     FlightComponent,
     CabComponent,
-    TrainComponent,
     NodeHostComponent,
   ],
   imports: [
@@ -35,6 +33,8 @@ import { NodeHostComponent } from './directions/node-host/node-host.component';
     MatIconModule,
     MatButtonModule,
     PortalModule,
+    TrainModule,
+    WalkModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

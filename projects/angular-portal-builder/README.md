@@ -70,3 +70,7 @@ export class HostComponent implements OnInit {
 3. ???
 
 4. Profit
+
+## Decoupling
+
+See the [example](https://github.com/marvinderksen/angular-portal-builder/tree/practice/refactor-switch/projects/examples/a2b) to step up the decoupling game and even get rid of a big registration array.
