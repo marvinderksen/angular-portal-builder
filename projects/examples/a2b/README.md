@@ -99,7 +99,7 @@ export class HostComponent implements OnInit {
 
   constructor(
     @Inject(COMPONENT_REGISTRATION)
-    private readonly injectedComponentRegistrations: any
+    private readonly injectedComponentRegistrations: ComponentRegistration[]
   ) { }
 
   ngOnInit(): void {

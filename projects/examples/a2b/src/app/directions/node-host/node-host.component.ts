@@ -36,7 +36,7 @@ export class NodeHostComponent implements OnInit {
 
   constructor(
     @Inject(NODE_COMPONENT_REGISTRATION)
-    injectedComponentRegistrations: any
+    injectedComponentRegistrations: ComponentRegistration[]
   ) {
     // 🡅 If you want to have the full advantages of decoupling features
     // you do not collect the different registrations in one array at build-time,
