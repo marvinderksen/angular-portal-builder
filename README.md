@@ -27,6 +27,10 @@ Please have a look at [the lib's readme](https://github.com/marvinderksen/angula
 
 You will find a small example application at [examples/a2b](https://github.com/marvinderksen/angular-portal-builder/tree/main/projects/examples/a2b).
 
+## Practice
+
+See the example-application on any `practice`-branch for katas.
+
 ## Massive thanks
 
 to the [Angular Components](https://github.com/angular/components) team!
