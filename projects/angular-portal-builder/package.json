@@ -1,6 +1,6 @@
 {
   "name": "angular-portal-builder",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Use @angular/cdk PortalOutlet with ease",
   "author": "Marvin Derksen",
   "repository": {
