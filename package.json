@@ -1,6 +1,6 @@
 {
   "name": "angular-portal-builder",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,6 @@
     "test": "jest --config ./projects/angular-portal-builder/jest.config.js",
     "lint": "ng lint"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^12.2.3",
     "@angular/cdk": "^12.2.3",
