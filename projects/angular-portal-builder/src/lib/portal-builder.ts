@@ -127,6 +127,7 @@ export class PortalBuilder<
       this.onPick(registration);
     }
 
+    outlet.detach();
     return outlet.attachComponentPortal<TComponent>(
       new ComponentPortal(registration.componentType, null, this.injector)
     );
